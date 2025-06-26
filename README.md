@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# 🗓️ Custom Event Calendar – Frontend Assignment
 
-## Project info
+This is a fully functional and interactive **event calendar application** built as part of a frontend assignment. It allows users to manage their schedules efficiently with features like adding, editing, deleting, filtering, and rescheduling events — including support for recurring events and responsive design.
 
-**URL**: https://lovable.dev/projects/d2fdfcbd-3de0-4636-9f34-996384f0532e
+> **Live Demo:** [https://your-live-link.vercel.app](https://your-live-link.vercel.app)  
+> **GitHub Repo:** [https://github.com/yourusername/custom-event-calendar](https://github.com/yourusername/custom-event-calendar)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Objective
 
-**Use Lovable**
+To build a **dynamic event calendar** that allows users to:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d2fdfcbd-3de0-4636-9f34-996384f0532e) and start prompting.
+- Manage personal events and schedules
+- Handle recurring and overlapping events
+- Drag and drop events to reschedule
+- Search and filter events
+- Experience a smooth, responsive user interface
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Features Implemented
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 1. Monthly Calendar View
+- Displays a traditional month grid
+- Current day is visually highlighted
+- Buttons to navigate between months
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 2. Event Management
+- **Add Events** by clicking on a specific date
+  - Event Title
+  - Date & Time (with time picker)
+  - Description
+  - Recurrence Options (Daily, Weekly, Monthly, Custom)
+  - Optional: Color tag or category
+- **Edit Events**
+  - Modify event details by clicking the event
+- **Delete Events**
+  - Easily remove unwanted events
 
-Follow these steps:
+### 3. Recurring Events
+- **Daily:** Repeats every day
+- **Weekly:** Repeats on selected weekdays
+- **Monthly:** Repeats on a chosen date each month
+- **Custom:** Repeat every _n_ days or weeks
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 4. Drag-and-Drop Rescheduling
+- Drag events to a new date
+- Automatic adjustment of recurring event chains
+- Handles edge cases (e.g., conflict with other events)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 5. Conflict Management
+- Prevents overlapping events at the same time
+- Warns user when conflicts occur
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 6. Filtering & Searching *(Optional Feature)*
+- Filter events by category or color
+- Search for events by title or description
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 7. Event Persistence
+- All events are stored in **Local Storage**
+- Data persists across browser refreshes
 
-**Edit a file directly in GitHub**
+### 8. Responsive Design *(Bonus Feature)*
+- Works on all screen sizes
+- Switches layout dynamically for smaller screens
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+##  Technical Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Tool/Library       | Purpose                                  |
+|--------------------|-------------------------------------------|
+| **React**          | Core UI framework                         |
+| **TypeScript**     | Type safety and developer tooling         |
+| **Tailwind CSS**   | Styling with utility-first classes        |
+| **Vite**           | Lightning-fast development/build tooling  |
+| **React DnD**      | Drag-and-drop functionality               |
+| **date-fns**       | Date/time manipulation and recurrence     |
+| **LocalStorage**   | In-browser event persistence              |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Folder Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d2fdfcbd-3de0-4636-9f34-996384f0532e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+├── public/                      # Static assets
+├── src/
+│   ├── components/              # Calendar, forms, modals
+│   ├── hooks/                   # useCalendar, useEvents, etc.
+│   ├── utils/                   # Date helpers, validation
+│   ├── App.tsx                  # Root component
+│   └── main.tsx                 # Entry point
+├── tailwind.config.ts          # Tailwind CSS config
+├── vite.config.ts              # Vite build settings
+├── index.html                  # Main HTML template
+├── package.json                # Project metadata & scripts
+└── README.md                   # Project documentation
