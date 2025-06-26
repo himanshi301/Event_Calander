@@ -1,0 +1,43 @@
+[33mcommit 185c382af68b566c7d775f35f76c38758a0b667a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Himanshi Singh <himanshisingh4988@gmail.com>
+Date:   Wed Jun 25 11:10:18 2025 +0000
+
+    feat: Implement event conflict, filtering, and persistence
+    
+    Adds event conflict detection, filtering by category/search, and local storage persistence. Ensures responsive design for various screen sizes.
+
+[33mcommit f31da6e0c72e8823185a0bb4c9d9227db25a6208[m
+Author: Himanshi Singh <himanshisingh4988@gmail.com>
+Date:   Wed Jun 25 10:59:59 2025 +0000
+
+    Add event recurrence options
+    
+    Implement recurrence options (daily, weekly, monthly, custom) for events.
+
+[33mcommit c668581caac700dfb9f8ee54bd8a43927d59b753[m
+Author: Himanshi Singh <himanshisingh4988@gmail.com>
+Date:   Wed Jun 25 10:55:32 2025 +0000
+
+    Fix: Resolve React DnD module errors
+    
+    Fixes the "Cannot find module 'react-dnd'" errors by installing the necessary dependencies and ensuring correct import statements. This resolves the build errors and enables drag-and-drop functionality.
+
+[33mcommit ed88cf260b17290710b261c0ca79baefdac9ecfe[m
+Author: Himanshi Singh <himanshisingh4988@gmail.com>
+Date:   Wed Jun 25 10:53:20 2025 +0000
+
+    feat: Implement event drag and drop
+    
+    Adds drag and drop functionality for rescheduling events.
+
+[33mcommit a44bc8219d57525d8f03b616c2ba7e8e8d22a89b[m
+Author: Himanshi Singh <himanshisingh4988@gmail.com>
+Date:   Wed Jun 25 10:37:29 2025 +0000
+
+    Implement event calendar features
+
+[33mcommit 2fc64b338e5ad5ec6a9c62010d35ce18b4e801be[m
+Author: Himanshi Singh <himanshisingh4988@gmail.com>
+Date:   Wed Jun 25 10:35:41 2025 +0000
+
+    Use tech stack vite_react_shadcn_ts
