@@ -2,7 +2,7 @@
 
 This is a fully functional and interactive **event calendar application** built as part of a frontend assignment. It allows users to manage their schedules efficiently with features like adding, editing, deleting, filtering, and rescheduling events — including support for recurring events and responsive design.
 
-> **Live Demo:** [https://your-live-link.vercel.app](https://your-live-link.vercel.app)  
+> **Live Demo:** [https://event-calander-ul9q.vercel.app](https://event-calander-ul9q.vercel.app)  
 > **GitHub Repo:** [https://github.com/yourusername/custom-event-calendar](https://github.com/yourusername/custom-event-calendar)
 
 ---
